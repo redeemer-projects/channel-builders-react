@@ -3,6 +3,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Banner from './components/Banner/Banner';
 import DreamHome from './components/DreamHome/DreamHome';
 import FeatureCard from './components/FeatureCard/FeatureCard';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Modern from './components/Modern/Modern';
 import Navbar from './components/NavBar/Navbar';
@@ -21,6 +22,7 @@ function App() {
       <Partners />
       <Testimonial />
       <DreamHome />
+      <Footer />
     </div>
   );
 }
