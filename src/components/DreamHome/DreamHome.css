@@ -1,0 +1,15 @@
+.DreamHome{
+    margin-top: 3rem;
+    
+}
+.Dreamcard{
+    color:white;
+    border: none;
+    border-radius: 0; 
+    transform: translate(0,50%) scale(0.8);
+}
+.btn_contactus{
+    background-color: white;
+    color: black;
+
+}

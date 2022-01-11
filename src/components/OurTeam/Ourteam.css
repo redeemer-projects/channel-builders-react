@@ -1,0 +1,40 @@
+.ourteam{
+    margin-top: 2rem;
+}
+.Ourteam_content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialMedia{
+    background-color: #F45905;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.socialMedia > a{
+    color: white;
+}
+.profileName{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profiles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

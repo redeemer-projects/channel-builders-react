@@ -9,7 +9,7 @@ function Modern() {
     return (
         <Container className='modern_card'>
             <Row>
-                <Col className='col_card' md={4}>
+                <Col md={4} className='col_card'>
                 <Card className='content_card'>
                     <Card.Body>
                     <h2 class="fw-bold">

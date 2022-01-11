@@ -1,0 +1,11 @@
+.background_image{
+    background:  url('/public/images/Rectangle\ 50.png');
+    background-size: cover;
+    height: 300px;
+    margin-top: 2rem;
+}
+.testimonial_profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

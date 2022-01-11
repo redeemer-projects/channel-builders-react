@@ -15,7 +15,7 @@ function Partners() {
             <Row>
                 <Col md={3}>
                     <Card style={{ width: '18rem', border : 'none' }}>
-                        <CardImg variant="top" src="./images/Logo Black.png" />
+                        <CardImg variant="top" src="./images/Channel_logo.png" />
                         <Card.Body style={{textAlign : 'center'}}>
                             <Card.Title style={{fontSize : '1rem'}}>Glass & Plywood </Card.Title>
                         </Card.Body>
@@ -23,15 +23,15 @@ function Partners() {
                 </Col>
                 <Col md={3}>
                     <Card style={{ width: '18rem' , border : 'none' }}>
-                        <CardImg variant="top" src="./images/Logo Black.png" />
+                        <CardImg variant="top" src="./images/Channel_logo.png" />
                         <Card.Body style={{textAlign : 'center'}}>
-                            <Card.Title style={{fontSize : '1rem'}}>Eventmanagement</Card.Title>
+                            <Card.Title style={{fontSize : '1rem'}}>Event Management</Card.Title>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col md={3}>
                     <Card style={{ width: '18rem' , border : 'none'}}>
-                        <CardImg variant="top" src="./images/Logo Black.png" />
+                        <CardImg variant="top" src="./images/Channel_logo.png" />
                         <Card.Body style={{textAlign : 'center'}}>
                             <Card.Title style={{fontSize : '1rem'}}>Alluminum Fabrication </Card.Title>
                         </Card.Body>
@@ -39,7 +39,7 @@ function Partners() {
                 </Col>
                 <Col md={3}>
                     <Card style={{ width: '18rem' , border : 'none'}}>
-                        <CardImg variant="top" src="./images/Logo Black.png" />
+                        <CardImg variant="top" src="./images/Channel_logo.png" />
                         <Card.Body style={{textAlign : 'center'}}>
                             <Card.Title style={{fontSize : '1rem'}}>Gypsum Plastering & False Ceiling</Card.Title>
                         </Card.Body>
