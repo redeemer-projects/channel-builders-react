@@ -1,0 +1,35 @@
+.Aboutus{
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus_title{
+    font-size: large;
+    color: #F45905;
+}
+.aboutus_heading{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.aboutus_tag{
+    font-size: 1.2rem;
+    font-weight: 300;
+    width: 100%;
+
+}
+.learn_more_button{
+    border: none;
+    width: 25%;
+    background-color: #F45905; 
+    height: 50px; 
+    border-radius: 0;
+    color: white;
+}
+.Aboutus_content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

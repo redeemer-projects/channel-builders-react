@@ -1,0 +1,19 @@
+.content_card{
+    border: none;
+    border-radius: 0; 
+    position: absolute;
+    width: 50%;
+    padding: 5rem 1rem;
+    box-shadow: -5px 0px 20px rgb(221, 221, 221);
+}
+.col_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.modern_card{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

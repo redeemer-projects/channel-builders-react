@@ -1,0 +1,9 @@
+.navbar_links{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
