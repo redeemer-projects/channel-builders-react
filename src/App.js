@@ -3,6 +3,7 @@ import './App.css';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 import Services from './pages/Services';
 
 
@@ -14,6 +15,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/services' element={<Services />} />
+        <Route path='/projects' element={<Projects />} />
       </Routes>
     </div>
   );
