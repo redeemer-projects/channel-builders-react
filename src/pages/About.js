@@ -1,7 +1,7 @@
 import React from 'react'
 import AboutDescription from '../components/AboutDescription/AboutDescription'
 import AboutVideo from '../components/AboutVideo/AboutVideo'
-import BannerAbout from '../components/BannerAbout/BannerAbout'
+import BannerImage from '../components/BannerAbout/BannerImage'
 import DreamHome from '../components/DreamHome/DreamHome'
 import Footer from '../components/Footer/Footer'
 import NavigationBar from '../components/NavigationBar/NavigationBar'
@@ -11,7 +11,7 @@ function About() {
     return (
         <div>
             <NavigationBar />
-            <BannerAbout />
+            <BannerImage  imgUrl="./images/TRD Home 4.png"/>
             <AboutDescription />
             <AboutVideo />
             <Ourteam />
