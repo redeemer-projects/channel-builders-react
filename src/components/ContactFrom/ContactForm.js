@@ -1,10 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button , TextField } from '@mui/material'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import "./ContactForm.css"
-import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
-import { height } from '@mui/system';
+
 
 function ContactForm() {
     
@@ -36,7 +34,7 @@ function ContactForm() {
                             rows={4}
                             variant="standard"
                         />
-                        <Button variant="contained" style={{ background : '#F45905' }}>Send Proposal <FontAwesomeIcon icon={faLongArrowAltRight} /></Button>
+                        <Button variant="contained" style={{ background : '#F45905' }}> Send</Button>
                     </Col>
                 </Row>
             </Container>
