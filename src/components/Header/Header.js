@@ -4,34 +4,29 @@ import React from 'react'
 import './Header.css'
 import { faEnvelope, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faFacebookF, faInstagram, faPinterestP, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { Col, Container, Row } from 'react-bootstrap'
 
 function Header() {
     return (
-        <div className='header'>
-            <div className="header_content">
-                <div className="header_left">
-                    <div className="header_left_location">
-                        <FontAwesomeIcon icon={faMapMarkerAlt} />
-                        <p> Kollam, Kerala</p>
+        <div style={{ backgroundColor : "#092B3D" ,minHeight : "5vh"}}>
+            <Container>
+                <Row>
+                    <Col md = {6}>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <a className="nav-link text-white" style={{fontSize : "small" }} href="#">Kollam, Kerala</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link text-white" style={{fontSize : "small"}} href="#"> info@channelsbuilders.com</a>
+                        </li>
+                        </ul>
                     </div>
-                    <div className="header_left_email">
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        <p>info@channelbuilders.com</p>
-                    </div>
-                </div>
-                <div className="header_right">
-                    <div className="header_right_socialmedia">
-                    <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-                    <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-                    <a href="#"><FontAwesomeIcon icon={faPinterestP} /></a>
-                    <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-
-                    </div>
-                    <div className="header_right_booknow">
-                        Book Now
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                    <Col md={6}>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     )
 }

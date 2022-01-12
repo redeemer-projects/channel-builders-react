@@ -5,8 +5,8 @@ import './FeatureCard.css'
 function FeatureCard() {
     return (
         <Container className='feature_card'>
-            <Row >
-                <Col md={4}>
+            <Row sm={1}>
+                <Col md={4} sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
                 <Card style={{ width: '24rem', border : 'none' }}>
                     <Card.Img variant="top" src="./images/Mask Group 2.png" />
                         <Card.Body style={{textAlign : 'center'}}>
@@ -14,7 +14,7 @@ function FeatureCard() {
                         </Card.Body>
                 </Card>
                 </Col>
-                <Col md={4}>
+                <Col md={4} sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
                 <Card style={{ width: '24rem', border : 'none' }}>
                     <Card.Img variant="top" src="./images/Mask Group 3.png" />
                         <Card.Body style={{textAlign : 'center'}}>
@@ -22,7 +22,7 @@ function FeatureCard() {
                         </Card.Body>
                 </Card>
                 </Col>
-                <Col md={4}>
+                <Col md={4} sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
                 <Card style={{ width: '24rem', border : 'none' }}>
                     <Card.Img variant="top" src="./images/Mask Group 4.png" />
                         <Card.Body style={{textAlign : 'center'}}>
@@ -30,7 +30,7 @@ function FeatureCard() {
                         </Card.Body>
                 </Card>
                 </Col>
-                <Col md={4}>
+                <Col md={4} sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
                 <Card style={{ width: '24rem', border : 'none' }}>
                     <Card.Img variant="top" src="./images/Mask Group 5.png" />
                         <Card.Body style={{textAlign : 'center'}}>
@@ -38,7 +38,7 @@ function FeatureCard() {
                         </Card.Body>
                 </Card>
                 </Col>
-                <Col md={4}>
+                <Col md={4} sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
                 <Card style={{ width: '24rem', border : 'none' }}>
                     <Card.Img variant="top" src="./images/Mask Group 6.png" />
                         <Card.Body style={{textAlign : 'center'}}>
@@ -46,7 +46,7 @@ function FeatureCard() {
                         </Card.Body>
                 </Card>
                 </Col>
-                <Col md={4}>
+                <Col md={4} sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
                 <Card style={{ width: '24rem', border : 'none' }}>
                     <Card.Img variant="top" src="./images/Mask Group 7.png" />
                         <Card.Body style={{textAlign : 'center'}}>

@@ -1,9 +1,7 @@
 .Aboutus{
-    height: 100vh;
+    min-height: 100vh;
+    max-height: fit-content;
     padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .aboutus_title{
     font-size: large;

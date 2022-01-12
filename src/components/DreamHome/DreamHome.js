@@ -13,7 +13,7 @@ function DreamHome() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore.</p>
                     </Col>
                     <Col md={3}>
-                        <Button style={{color : 'black' , backgroundColor : 'white' , border : "0px" , borderRadius : '0px' ,transform: 'scale(1.3)'}}>Contact us</Button>
+                        <Button style={{color : 'black' , backgroundColor : 'white' , border : "0px" , borderRadius : '0px' ,transform: 'scale(1.4)' , width : '10rem'}}>Contact us</Button>
                     </Col>
                 </Row>
             </Card.Body>

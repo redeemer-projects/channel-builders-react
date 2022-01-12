@@ -9,8 +9,13 @@ function Modern() {
     return (
         <Container className='modern_card'>
             <Row>
-                <Col md={4} className='col_card'>
-                <Card className='content_card'>
+                <Col md={4} sm={4} className='col_card'>
+                <Card style={{border: "none" ,
+                            borderRadius: "0",  
+                            position: "absolute",
+                            width: "50%",
+                            padding: "5rem 1rem",
+                            boxShadow: "-5px 0px 20px rgb(221, 221, 221)"}}>
                     <Card.Body>
                     <h2 class="fw-bold">
                         Your Perfect & Modern <br/>
@@ -23,7 +28,7 @@ function Modern() {
                     </Card.Body>
                 </Card>
                 </Col>
-                <Col md={8}>
+                <Col md={8} sm={8}>
                     <Image fluid src='./images/interior.png'/>
                 </Col>
             </Row>
