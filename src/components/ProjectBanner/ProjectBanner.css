@@ -1,3 +1,11 @@
-.current_project{
-    background-image: url('../../../public/images/TRD\ Home\ 2.png');
+
+.img_right{
+    position: relative;
+    
+}
+.card_right{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-20%,-70%)
 }

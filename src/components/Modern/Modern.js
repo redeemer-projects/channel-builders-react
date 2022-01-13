@@ -24,7 +24,7 @@ function Modern() {
                     <p class="small">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad earum magnam eos? Eos ex, suscipit molestias aut placeat fugiat blanditiis nihil. Cupiditate consequatur provident delectus facere voluptate praesentium est nisi?
                     </p><br/>
-                    <button className="learn_more_button">Learn more <FontAwesomeIcon icon={faLongArrowAltRight} /></button>
+                    <button className="learn_more_button">Learn more  <FontAwesomeIcon icon={faLongArrowAltRight} /></button>
                     </Card.Body>
                 </Card>
                 </Col>
