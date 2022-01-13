@@ -1,9 +1,11 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 import ServiceCard from '../ServiceCard/ServiceCard'
 import './ServiceDescription.css'
 
 function ServiceDescription() {
+    const navigate = useNavigate()
     return (
         <div className='servicedescription'>
             <Container>
@@ -11,7 +13,7 @@ function ServiceDescription() {
                 <Col md={6}> 
                     <div className='Aboutus_content'>
                         <h6 className="aboutus_title">
-                            ABOUT US
+                            SERVICES
                         </h6>
                         <h3 className="aboutus_heading">
                             GET THE BEST ADVANTAGE SERVICES
@@ -40,12 +42,13 @@ function ServiceDescription() {
                         description={"Some quick example text to build on the card title and make up the bulk of the card's content."}
                         />
                     </Col>
-                    <Col md={4} sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
+                    <Col md={4} sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}} >
                         <ServiceCard  
                         bImgUrl = {"./images/Group 180Black.png"}
                         oImgUrl={"./images/Group 180.png"}
                         title={"Estimation"}
                         description={"Some quick example text to build on the card title and make up the bulk of the card's content."}
+                        navigation={'/estimation'}
                         />
                     </Col>
                     <Col md={4} sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
