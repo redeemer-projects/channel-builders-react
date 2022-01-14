@@ -7,7 +7,7 @@ import { CarouselItem } from 'react-bootstrap'
 
 function Banner() {
     return (
-        <Carousel>
+        <Carousel interval={1000}>
             <CarouselItem>
                 <img
                 className="d-block w-100"

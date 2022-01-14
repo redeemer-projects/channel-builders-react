@@ -26,7 +26,7 @@ function AboutDescription() {
                 </Row>
                 <Row>
                     <Col md={12}>
-                        <h6 style={{ fontWeight : "300" }}>
+                        <h6 className='about_description101'>
                             Lorem Ipsum is simply dummy text of the printing
                             and typesetting industry. Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s,
@@ -69,7 +69,7 @@ function AboutDescription() {
                         <h2 className="aboutus_heading">
                             Our core value
                         </h2>
-                        <h6 style={{ fontWeight : "300" }}>
+                        <h6 className='about_description101'>
                         Lorem Ipsum is simply dummy text of the printing
                         and typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s,

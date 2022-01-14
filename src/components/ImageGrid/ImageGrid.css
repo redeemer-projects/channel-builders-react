@@ -1,19 +1,28 @@
-.img_grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
-}
 .img_wrap{
-    overflow:  hidden;
-    height: 0;
-    padding: 50% 0;
-    position: relative;
-    opacity: 0.8;
+    width: 100%;
 }
-.img_wrap > img{
-    min-width: 100%;
-    min-height: 100%;
-    max-width: 150%;
-    position: absolute;
-    top: 0;
+.img_div{
+    padding: 5px;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: black !important;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.title_grid{
+    font-size: 1rem;
+}
+@media all and (max-width : 600px){
+    .title_grid{
+        font-size: 0.7rem;
+    }
 }

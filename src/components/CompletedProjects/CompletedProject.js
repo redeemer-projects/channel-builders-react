@@ -13,10 +13,10 @@ function CompletedProject() {
                         <h6 className="aboutus_title">
                             PROJECTS
                         </h6>
-                        <h2 className="aboutus_heading">
+                        <h3 className="aboutus_heading">
                         OUR COMPLETED
                         PROJECT VISUALS
-                        </h2>
+                        </h3>
                         <h6 className="aboutus_tag">
                             Lorem Ipsum is simply dummy text of the printing
                             Lorem Ipsum is simply dummy text of the printing

@@ -5,14 +5,28 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap'
 import './ProjectBanner.css'
 
 function ProjectBanner() {
+    const media1 = { width: '26rem' ,
+        boxShadow : '-5px 0px 20px rgb(221, 221, 221)' ,
+        borderRadius : "0px" ,
+        position : "absolute" ,
+        top : "70%" ,
+        left : "20%" ,
+        transform : "translate(-20%,-70%) " }
+    const media2 ={
+        width: '26rem' ,
+        position : "absolute" ,
+        top : "70%" ,
+        left : "5%" ,
+        transform : "translate(-30%,-70%)  scale(0.4)"
+    }
     return (
         <Container fluid>
             <div style={{ display : "grid" , gridTemplateColumns : '1fr 1fr' , gridGap : '0.5rem' }}>
                 <div className='img_right'>
                     <img src="./images/Mask Group 20.png" alt="" className="d-block w-100 h-100" />
-                    <Card style={{ width: '26rem' , boxShadow : '-5px 0px 20px rgb(221, 221, 221)' , borderRadius : "0px" , position : "absolute" , top : "70%" , left : "20%" , transform : "translate(-20%,-70%) " }} >
+                    <Card style={window.innerWidth <= 600 ? media2 : media1 } >
                     <Card.Body>
-                        <Card.Title style={{ fontSize : '1.5rem' ,fontWeight : "700" }}>OUR CURRENT PROJECT</Card.Title>
+                        <Card.Title style={{ fontSize : '1.5rem' ,fontWeight : "700" }}>OUR RECENT PROJECT</Card.Title>
                         <Card.Text>
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.

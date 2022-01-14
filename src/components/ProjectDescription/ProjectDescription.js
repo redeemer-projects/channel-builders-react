@@ -12,11 +12,10 @@ function ProjectDescription() {
                 <Col md={6}> 
                     <div className='Aboutus_content'>
                         <h6 className="aboutus_title">
-                            ABOUT US
+                            PROJECTS
                         </h6>
                         <h2 className="aboutus_heading">
-                            With our knowledge
-                            we guaranty success
+                        OUR COMPLETED &UPCOMING PROJECTS
                         </h2>
                         <h6 className="aboutus_tag">
                             Lorem Ipsum is simply dummy text of the printing

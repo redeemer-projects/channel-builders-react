@@ -2,3 +2,13 @@
     margin-top: 5rem;
     padding: 2rem;
 }
+.about_description101{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+@media all and (max-width : 600px){
+    .about_description101{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+}

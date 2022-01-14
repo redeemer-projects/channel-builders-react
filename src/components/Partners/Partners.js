@@ -13,7 +13,7 @@ function Partners() {
                     </h2>
             </div>
             <Row>
-                <Col md={3}>
+                <Col md={3} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
                     <Card style={{ width: '18rem', border : 'none' }}>
                         <CardImg variant="top" src="./images/Channel_logo.png" />
                         <Card.Body style={{textAlign : 'center'}}>
@@ -21,7 +21,7 @@ function Partners() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={3}>
+                <Col md={3} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
                     <Card style={{ width: '18rem' , border : 'none' }}>
                         <CardImg variant="top" src="./images/Channel_logo.png" />
                         <Card.Body style={{textAlign : 'center'}}>
@@ -29,7 +29,7 @@ function Partners() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={3}>
+                <Col md={3} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
                     <Card style={{ width: '18rem' , border : 'none'}}>
                         <CardImg variant="top" src="./images/Channel_logo.png" />
                         <Card.Body style={{textAlign : 'center'}}>
@@ -37,7 +37,7 @@ function Partners() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={3}>
+                <Col md={3} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
                     <Card style={{ width: '18rem' , border : 'none'}}>
                         <CardImg variant="top" src="./images/Channel_logo.png" />
                         <Card.Body style={{textAlign : 'center'}}>

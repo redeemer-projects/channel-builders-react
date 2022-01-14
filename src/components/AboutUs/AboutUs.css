@@ -31,3 +31,16 @@
     flex-direction: column;
     justify-content: center;
 }
+
+@media all and (max-width : 600px){
+    .aboutus_heading{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .aboutus_tag{
+        font-size: 0.8rem;
+        font-weight: 300;
+        width: 100%;
+    
+    }
+}
