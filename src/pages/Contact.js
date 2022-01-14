@@ -15,7 +15,6 @@ function Contact() {
             <ContactForm />
             <ContactDetail />
             <ContactMap />
-            <DreamHome />
             <Footer />
         </div>
     )

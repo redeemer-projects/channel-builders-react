@@ -15,7 +15,6 @@ function About() {
             <AboutDescription />
             <AboutVideo />
             <Ourteam />
-            <DreamHome />
             <Footer />
         </div>
     )

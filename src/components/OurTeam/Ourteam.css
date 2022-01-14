@@ -1,5 +1,6 @@
 .ourteam{
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .Ourteam_content{
     display: flex;
@@ -32,6 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 .profiles{
     display: flex;

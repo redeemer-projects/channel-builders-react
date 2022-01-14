@@ -1,7 +1,8 @@
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, FormControl, Row } from 'react-bootstrap'
 import './Footer.css'
 function Footer() {
     return (
@@ -15,7 +16,12 @@ function Footer() {
                     <p class="mt-5" style={{fontSize : "12px" , color: "white"}}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
-                    <img class="img-fluid mt-5" src="images/Group 96.png" alt="" />
+                    <div className="social_media_icons">
+                        <FontAwesomeIcon icon={faFacebook} color='white' size='2x' style={{ marginLeft : '0.4rem' }}/>
+                        <FontAwesomeIcon icon={faInstagram} color='white' size='2x'style={{ marginLeft : '0.4rem' }}/>
+                        <FontAwesomeIcon icon={faWhatsapp} color='white' size='2x'style={{ marginLeft : '0.4rem' }}/>
+                        <FontAwesomeIcon icon={faTwitter} color='white' size='2x' style={{ marginLeft : '0.4rem' }}/>
+                     </div>
                     </Col>
                     <Col md={4}>
                         <Row>

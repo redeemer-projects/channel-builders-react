@@ -1,13 +1,9 @@
 import React from 'react'
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 function ContactMap() {
     
     return (
-        <div style={{ transform: 'translate(0,35%)'}}>
-            <Wrapper apiKey={"YOUR_API_KEY"}>
-                
-            </Wrapper>
+        <div style={{marginTop : '2rem'}}>
 
             <img
                 className="d-block w-100"

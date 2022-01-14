@@ -45,7 +45,7 @@ function FeatureCard() {
                 <Card style={{ width: '24rem', border : 'none' }}>
                     <Card.Img variant="top" src="./images/Mask Group 6.png" />
                         <Card.Body style={{textAlign : 'center'}}>
-                            <Card.Title>Consulting</Card.Title>
+                            <Card.Title>Architectural Consulting</Card.Title>
                         </Card.Body>
                 </Card>
                 </Col>

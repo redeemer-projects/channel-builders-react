@@ -11,7 +11,6 @@ function Estimaton() {
             <NavigationBar />
             <ProjectBanner />
             <EstimationDescription />
-            <DreamHome />
             <Footer />
         </div>
     )

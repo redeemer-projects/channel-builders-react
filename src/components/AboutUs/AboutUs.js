@@ -1,9 +1,13 @@
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { Col, Container, Image, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
+import AboutCarousel from '../AboutCarousel/AboutCarousel'
 import './AboutUs.css'
+import { useNavigate } from 'react-router-dom'
+
 function AboutUs() {
+    const navigate = useNavigate()
     return (
         <Container className='Aboutus'>
             <Row>
@@ -23,11 +27,11 @@ function AboutUs() {
                             and typesetting industry. Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s,
                         </h6>
-                        <button className="learn_more_button">Learn more <FontAwesomeIcon icon={faLongArrowAltRight} /></button>
+                        <button className="learn_more_button" onClick={()=>navigate('/about ')}>Learn more <FontAwesomeIcon icon={faLongArrowAltRight} /></button>
                     </div>
                 </Col>
                 <Col md={6}>
-                    <Image fluid src='./images/Group 41.png'/>
+                    <AboutCarousel />
                 </Col>
             </Row>
         </Container>

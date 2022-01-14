@@ -7,7 +7,7 @@ import Footer from '../components/Footer/Footer'
 import Modern from '../components/Modern/Modern'
 import NavigationBar from '../components/NavigationBar/NavigationBar'
 import Partners from '../components/Partners/Partners'
-
+import ContactForm from '../components/ContactFrom/ContactForm'
 function Home() {
     return (
         <div>

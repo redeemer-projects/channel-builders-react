@@ -12,7 +12,7 @@ function Ourteam() {
                 <Row className='profiles'>
                     <Col md={3}>
                     <div className='profile'>
-                        <Card style={{ width: '18rem' ,border : '15px solid white' , boxShadow : '-5px 0px 20px rgb(221, 221, 221)' , borderRadius : '0px'}}>
+                        <Card style={{ width: '18rem' ,border : '15px solid white' , boxShadow : '-5px 0px 20px rgb(221, 221, 221)' , borderRadius : '0px' }}>
                             <Card.Img variant="top" src="./images/Mask Group 11.png" style={{ borderRadius : '0px' }}/>
                         </Card>
                         <Card style={{ width: '14rem' , borderRadius : '0px' , border : 'none' , boxShadow : '-5px 0px 20px rgb(221, 221, 221)' , marginTop : '-3rem'}}>
