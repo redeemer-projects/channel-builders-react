@@ -34,7 +34,7 @@ function ServiceDescription() {
                         description={"Some quick example text to build on the card title and make up the bulk of the card's content."}
                         />
                     </Col>
-                    <Col md={4}  sm={12} >
+                    <Col md={4}  sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
                         <ServiceCard  
                         bImgUrl = {"./images/Group 179Black.png"}
                         oImgUrl={"./images/Group 179.png"}

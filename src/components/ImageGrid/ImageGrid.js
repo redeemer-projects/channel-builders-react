@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
 import './ImageGrid.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ImagePreview from '../ImagePreview/ImagePreview';
 
+const images = ["./images/Mask Group 25.png","./images/Mask Group 23.png","./images/Mask Group 26.png","./images/Mask Group 24.png","./images/Mask Group 25.png","./images/Mask Group 23.png","./images/Mask Group 25.png","./images/Mask Group 26.png","./images/Mask Group 24.png"]
 function ImageGrid() {
     const settings = {
         arrows : true,
@@ -27,6 +29,26 @@ function ImageGrid() {
               }
             }],
       };
+
+    const [showModal,setShowModal] =useState('close')
+    const [imgUrl,setImgUrl] = useState()
+    const handleClick = (img,e) =>{
+        if(e.target !== e.currentTarget){
+            return;
+        }
+        switch(showModal){
+            case 'open' :
+                setShowModal('close');
+                break;
+            case 'close' :
+                setShowModal('open');
+                break;
+            default:
+                setShowModal('close');
+                break;
+        }
+        setImgUrl(img)
+    }
     return (
         <Container style={{ marginTop : '2rem' , color : "black" , textAlign : "center"}}>
             <div style={{ display : "flex" , alignItem : "center" , justifyContent : "space-around"}}>
@@ -36,43 +58,16 @@ function ImageGrid() {
             </div>
             
             <Slider  {...settings}>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 25.png"  className="img_wrap" alt="" />
-                </div>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 23.png"  className="img_wrap" alt="" />
-                </div>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 26.png"  className="img_wrap" alt="" />
-                </div>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 24.png"  className="img_wrap" alt="" />
-                </div>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 25.png"  className="img_wrap" alt="" />
-                </div>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 23.png" className="img_wrap" alt="" />
-                </div>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 26.png" className="img_wrap" alt="" />
-                </div>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 24.png" className="img_wrap" alt="" />
-                </div>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 25.png" className="img_wrap" alt="" />
-                </div>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 23.png" className="img_wrap" alt="" />
-                </div>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 26.png" className="img_wrap" alt="" />
-                </div>
-                <div className='img_div'>
-                    <img src="./images/Mask Group 24.png" className="img_wrap" alt="" />
-                </div>
+                
+                {
+                    images.map((img,index)=>(
+                        <div className='img_div'>
+                            <img src={img} className="img_wrap" alt="" onClick={(e)=>handleClick(img,e)} index={index}/>
+                        </div>
+                    ))
+                }
             </Slider>
+            <ImagePreview imgUrl={imgUrl} showModal={showModal} handleClick={handleClick} setShowModal={setShowModal}/>
         </Container>
     )
 }

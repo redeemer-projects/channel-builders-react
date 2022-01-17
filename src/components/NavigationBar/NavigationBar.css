@@ -10,3 +10,9 @@
 .highlighted{
     color: black;
 }
+@media all and (max-width : 700px){
+    .img_logo{
+        width: 10rem;
+        height: 10rem;
+    }
+}
