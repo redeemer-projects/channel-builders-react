@@ -1,5 +1,4 @@
 import React from 'react'
-import DreamHome from '../components/DreamHome/DreamHome'
 import EstimationDescription from '../components/EstimationDescription/EstimationDescription'
 import Footer from '../components/Footer/Footer'
 import NavigationBar from '../components/NavigationBar/NavigationBar'
