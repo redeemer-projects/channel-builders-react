@@ -16,7 +16,7 @@ function AboutCarousel() {
                     <CarouselItem key={index}>
                         <img
                         className="d-block w-100"
-                        src={`http://192.168.0.100:3006` +obj}
+                        src={`http://localhost:3006` +obj}
                         alt="First slide"
                         />
                     </CarouselItem>
