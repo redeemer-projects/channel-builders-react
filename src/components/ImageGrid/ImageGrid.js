@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
 import './ImageGrid.css'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ImagePreview from '../ImagePreview/ImagePreview';
+import axios from '../../axios/axios'
+
 
 const images = ["./images/Mask Group 25.png","./images/Mask Group 23.png","./images/Mask Group 26.png","./images/Mask Group 24.png","./images/Mask Group 25.png","./images/Mask Group 23.png","./images/Mask Group 25.png","./images/Mask Group 26.png","./images/Mask Group 24.png"]
 function ImageGrid() {
@@ -49,8 +51,16 @@ function ImageGrid() {
         }
         setImgUrl(img)
     }
+    useEffect(()=>{
+        try{
+            const response = axios.get("")
+        }catch(err){
+
+        }
+
+    })
     return (
-        <Container style={{ marginTop : '2rem' , color : "black" , textAlign : "center"}}>
+        <Container style={{ marginTop : '2rem' , color : "black" , textAlign : "center"}} id='image_grid'>
             <div style={{ display : "flex" , alignItem : "center" , justifyContent : "space-around"}}>
                 <h5 className='title_grid'>Completed</h5>
                 <h5 className='title_grid'>Upcoming</h5>

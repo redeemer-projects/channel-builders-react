@@ -5,7 +5,7 @@ import './DreamHome.css'
 
 function DreamHome() {
     const buttonStyle1 = {
-        color : 'black' , backgroundColor : 'white' , border : "0px" , borderRadius : '0px' ,transform: 'scale(1.4)' , width : '10rem'
+        color : 'black' , backgroundColor : 'white' , border : "0px" , borderRadius : '0px' ,transform: 'scale(1.4)' , width : '10rem', display :"flex" , alignItems : "center" , justifyContent : "center"
     }
     const buttonStyle2 = {
         color : 'white' , backgroundColor : '#181B2A' , border : "0px" , borderRadius : '0px' ,transform: 'scale(1.4)' , width : '10rem'
@@ -16,12 +16,12 @@ function DreamHome() {
         <Container className='DreamHome'>
             <Card className='Dreamcard' style={{backgroundColor : "#F45905" , transform: 'translate(0,50%) scale(0.8)'  }}>
             <Card.Body>
-                <Row style={{ display : 'flex' , alignItems : "center" , margin : "1.5rem"}}>
-                    <Col md={9}>
+                <Row style={{ display : 'flex' , alignItems : "center" , margin : "1.5rem" ,justifyContent : "space-around" }}>
+                    <Col md={9} xs={12}>
                         <h2>looking for a dream home ?</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore.</p>
                     </Col>
-                    <Col md={3}>
+                    <Col md={3} xs={12} style={{ display : "flex" , alignItems : "center" , justifyContent : "center" }}>
                         <Button style={btnStyle} onMouseEnter={()=>setBtnStyle(buttonStyle2)} onMouseLeave={()=>setBtnStyle(buttonStyle1)} onClick={()=>navigate('/contact')}>Contact us</Button>
                     </Col>
                 </Row>

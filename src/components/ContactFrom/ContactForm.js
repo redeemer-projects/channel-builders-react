@@ -1,4 +1,5 @@
 import { Button , TextField } from '@mui/material'
+import axios from '../../axios/axios'
 import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import "./ContactForm.css"
@@ -9,12 +10,28 @@ function ContactForm() {
     const [email,setEmail] = useState()
     const [phone,setPhone] = useState()
     const [message,setMessage] = useState()
+    const [reMsg,setReMsg] = useState()
 
     const handleSend = async (e) =>{
-        console.log(fullName);
-        console.log(email);
-        console.log(phone);
-        console.log(message);
+        e.preventDefault()
+        try{
+            const response = await axios.post('/create-enquiry',{
+                name : fullName,
+                email : email,
+                mobile : phone,
+                message : message
+            }).then((response)=>{
+                console.log(response.data);
+                setReMsg(response.data)
+                setEmail('')
+                setFullName('')
+                setMessage('')
+                setPhone('')
+            })
+
+        }catch(err){
+            console.log(err.response)
+        }
     }
     return (
         <div className='contactform'>
@@ -46,6 +63,7 @@ function ContactForm() {
                             onChange={(e)=>setMessage(e.target.value)}
                         />
                         <Button variant="contained" style={{ background : '#F45905' }} onClick={handleSend}> Send</Button>
+                        <p  className={reMsg ? "msg" : "offscreen"} aria-live="assertive">{reMsg}</p>
                     </Col>
                 </Row>
             </Container>

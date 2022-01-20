@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Carousel } from 'react-bootstrap'
 
-function AboutCarousel() {
+function AboutCarousel(title) {
+    useEffect(()=>{
+        
+    })
     return (
         <div>
             <Carousel interval={1000}>

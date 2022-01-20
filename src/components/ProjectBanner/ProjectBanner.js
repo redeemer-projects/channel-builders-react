@@ -20,7 +20,7 @@ function ProjectBanner() {
         transform : "translate(-30%,-70%)  scale(0.4)"
     }
     return (
-        <Container fluid>
+        <Container fluid id='plan'>
             <div style={{ display : "grid" , gridTemplateColumns : '1fr 1fr' , gridGap : '0.5rem' }}>
                 <div className='img_right'>
                     <img src="./images/Mask Group 20.png" alt="" className="d-block w-100 h-100" />
@@ -31,7 +31,7 @@ function ProjectBanner() {
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                         </Card.Text>
-                        <Button variant="primary" style={{ background : "#F45905" , border : "none" }} >View Details <FontAwesomeIcon icon={faLongArrowAltRight} /></Button>
+                       <a href='#gallery'><Button variant="primary" style={{ background : "#F45905" , border : "none" }} >View Details <FontAwesomeIcon icon={faLongArrowAltRight} /></Button></a>
                     </Card.Body>
                     </Card>
                 </div>

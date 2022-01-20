@@ -11,7 +11,7 @@ function ProjectDescription() {
                 <Row>
                 <Col md={6}> 
                     <div className='Aboutus_content'>
-                        <h6 className="aboutus_title">
+                        <h6 className="aboutus_title" id='gallery'>
                             PROJECTS
                         </h6>
                         <h2 className="aboutus_heading">

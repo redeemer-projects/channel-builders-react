@@ -2,3 +2,15 @@
     margin-top: 5rem;
     padding: 2rem;
 }
+.offscreen{
+    position: absolute;
+    left: -9999px;
+}
+.msg{
+  background-color: aliceblue;
+  color: #FF4C29;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}

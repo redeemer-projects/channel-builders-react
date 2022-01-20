@@ -1,11 +1,9 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
 import ServiceCard from '../ServiceCard/ServiceCard'
 import './ServiceDescription.css'
 
 function ServiceDescription() {
-    const navigate = useNavigate()
     return (
         <div className='servicedescription'>
             <Container>
@@ -32,6 +30,8 @@ function ServiceDescription() {
                         oImgUrl={"./images/Group 178.png"}
                         title={"Building Plan"}
                         description={"Some quick example text to build on the card title and make up the bulk of the card's content."}
+                        route={"buildingplan"}
+                        navigation={'/details'}
                         />
                     </Col>
                     <Col md={4}  sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
@@ -40,6 +40,8 @@ function ServiceDescription() {
                         oImgUrl={"./images/Group 179.png"}
                         title={"3D Elevation"}
                         description={"Some quick example text to build on the card title and make up the bulk of the card's content."}
+                        route={"3delevation"}
+                        navigation={'/details'}
                         />
                     </Col>
                     <Col md={4} sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}} >
@@ -48,7 +50,8 @@ function ServiceDescription() {
                         oImgUrl={"./images/Group 180.png"}
                         title={"Estimation"}
                         description={"Some quick example text to build on the card title and make up the bulk of the card's content."}
-                        navigation={'/estimation'}
+                        navigation={'/details'}
+                        route={'estimation'}
                         />
                     </Col>
                     <Col md={4} sm={12} style={{ display : 'flex' , alignItem : "center" , justifyContent : "center"}}>
@@ -57,6 +60,8 @@ function ServiceDescription() {
                         oImgUrl={"./images/Group 182.png"}
                         title={"Contractors"}
                         description={"Some quick example text to build on the card title and make up the bulk of the card's content."}
+                        route={"contractors"}
+                        navigation={'/details'}
                         />
                     </Col>
                     <Col md={4} sm={12} style={{ display : "flex" , justifyContent : 'center' }}>
@@ -65,14 +70,18 @@ function ServiceDescription() {
                         oImgUrl={"./images/Group 181.png"}
                         title={"Consulting"}
                         description={"Some quick example text to build on the card title and make up the bulk of the card's content."}
+                        route={"ac"}
+                        navigation={'/details'}
                         />
                     </Col>
                     <Col md={4} sm={12} style={{ display : "flex" , justifyContent : 'center' }}>
                         <ServiceCard  
                         bImgUrl = {"./images/Path 1702Black.png"}
                         oImgUrl={"./images/Path 1747.png"}
-                        title={"Building Plan"}
+                        title={"Landscaping"}
                         description={"Some quick example text to build on the card title and make up the bulk of the card's content."}
+                        route={"landscaping"}
+                        navigation={'/details'}
                         />
                     </Col>
                 </Row>

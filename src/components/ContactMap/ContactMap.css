@@ -1,0 +1,44 @@
+.Map_Component{
+    height: 60vh;
+    background-image: url("../../../public/images/Mask\ Group\ 41.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.event_map{
+    width: 25rem;
+    background-color: #FF4C29;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    box-shadow: 0px 6px 4px -1px rgba(143,140,140,0.79);
+    -webkit-box-shadow: 0px 6px 4px -1px rgba(143,140,140,0.79);
+    -moz-box-shadow: 0px 6px 4px -1px rgba(143,140,140,0.79);
+    color: white;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+}
+.event_map > button{
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    border: none;
+    background-color: #191B2A;
+
+}
+.event_map > button:hover{
+    border-radius: 0;
+    background-color: #282a46;
+
+}
+.event_map > button > a{
+    text-decoration: none;
+    color: white;
+}
+@media all and (max-width : 700px){
+    .event_map{
+        left: 3%;
+        transform: scale(0.7);
+    }
+}
