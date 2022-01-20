@@ -11,7 +11,7 @@ function Contact() {
     return (
         <div>
             <NavigationBar />
-            <BannerImage imgUrl={"./images/Mask Group 36.png"} />
+            <BannerImage imgUrl={"./images/Mask Group 422.jpg"} />
             <ContactForm />
             <ContactDetail />
             <ContactMap />

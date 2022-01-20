@@ -36,7 +36,7 @@ function ProjectBanner() {
                     </Card>
                 </div>
                 <div style={{ display : "grid" , gridTemplateRows : '' }}>
-                    <div>
+                    <div className='img_wrapper'>
                         <img src="./images/Group 180right.png" alt="" className="d-block w-100" />
                     </div>   
                 </div>

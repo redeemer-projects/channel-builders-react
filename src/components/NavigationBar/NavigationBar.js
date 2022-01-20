@@ -9,7 +9,7 @@ function NavigationBar() {
         <div>
             <Navbar collapseOnSelect expand="lg" >
               <Container>
-                <Navbar.Brand href="#home"><img src="./images/Channel_logo.png" alt=""  style={window.innerWidth <=700 ? { width : "15rem"} : {width : "100%"}}/></Navbar.Brand>
+                <Navbar.Brand><img src="./images/Channel_logo.png" alt=""  style={window.innerWidth <=700 ? { width : "15rem" , cursor : "pointer"} : {width : "100%" , cursor : "pointer"}} onClick={()=>navigate('/')} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="me-auto">

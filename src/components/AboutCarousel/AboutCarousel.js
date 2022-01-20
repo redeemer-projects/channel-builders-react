@@ -1,34 +1,27 @@
-import React, { useEffect } from 'react'
-import { Carousel } from 'react-bootstrap'
-
-function AboutCarousel(title) {
+import React, { useEffect, useState } from 'react'
+import { Carousel, CarouselItem } from 'react-bootstrap'
+import axios from '../../axios/axios'
+function AboutCarousel() {
+    const [aboutSlide,setAboutSlide] = useState()
     useEffect(()=>{
-        
-    })
+        const response = axios.get('/subcarousals?api_key=test_key').then((response)=>{
+            setAboutSlide(response.data.about)
+        })
+    },[])
     return (
         <div>
             <Carousel interval={1000}>
-            <Carousel.Item>
-                <img
-                className="d-block w-100"
-                src='./images/Mask Group 20.png'
-                alt="First slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                className="d-block w-100"
-                src='./images/Mask Group 20.png'
-                alt="Second slide"
-                />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                className="d-block w-100"
-                src='./images/Mask Group 20.png'
-                alt="Third slide"
-                />
-            </Carousel.Item>
+            { aboutSlide &&
+                aboutSlide.map((obj,index)=>(
+                    <CarouselItem key={index}>
+                        <img
+                        className="d-block w-100"
+                        src={`http://192.168.0.100:3006` +obj}
+                        alt="First slide"
+                        />
+                    </CarouselItem>
+                )) 
+            }
             </Carousel>
         </div>
     )

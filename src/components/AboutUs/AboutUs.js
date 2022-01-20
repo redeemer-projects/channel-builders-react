@@ -31,7 +31,7 @@ function AboutUs() {
                     </div>
                 </Col>
                 <Col md={6}>
-                    <AboutCarousel title={"about"}/>
+                    <AboutCarousel/>
                 </Col>
             </Row>
         </Container>
